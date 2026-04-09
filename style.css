@@ -57,8 +57,8 @@ body {
 }
 
 .brand-logo {
-  width: 56px;
-  height: 56px;
+  width: 112px;
+  height: 112px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -261,8 +261,8 @@ h1 {
   }
 
   .brand-logo {
-    width: 48px;
-    height: 48px;
+    width: 96px;
+    height: 96px;
   }
 
   .nav {
