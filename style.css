@@ -49,7 +49,7 @@ body {
 .brand {
   color: #fff;
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 2.2rem;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
@@ -57,8 +57,8 @@ body {
 }
 
 .brand-logo {
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -205,6 +205,15 @@ h1 {
 }
 
 @media (max-width: 760px) {
+  .brand {
+    font-size: 1.8rem;
+  }
+
+  .brand-logo {
+    width: 48px;
+    height: 48px;
+  }
+
   .nav {
     flex-direction: column;
     gap: 0.8rem;
