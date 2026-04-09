@@ -17,6 +17,7 @@
       <ul class="nav-links">
         <li><a href="#sortiment">Sortiment</a></li>
         <li><a href="#sluzby">Služby</a></li>
+        <li><a href="#formular">Formulář</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
@@ -77,6 +78,30 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="section container" id="formular">
+      <h2>Rychlý formulář</h2>
+      <p class="section-intro">Napište nám zprávu a odešleme ji na váš e-mail.</p>
+      <form class="contact-form" action="https://formsubmit.co/vabisv8@email.cz" method="POST">
+        <input type="hidden" name="_subject" value="Nová zpráva z webu VV kovo">
+        <input type="hidden" name="_captcha" value="false">
+
+        <label for="name">Jméno</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Zpráva</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn btn-primary" type="submit">Odeslat zprávu</button>
+      </form>
+      <p class="form-note">
+        Formulář je nastavený pro GitHub Pages a odesílá zprávy na e-mail
+        <code>vabisv8@email.cz</code>.
+      </p>
     </section>
 
     <section class="section container" id="kontakt">
