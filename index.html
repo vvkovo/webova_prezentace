@@ -10,9 +10,8 @@
 <body>
   <header class="hero" id="home">
     <nav class="nav container">
-      <a class="brand" href="#home">
+      <a class="brand" href="#home" aria-label="VV kovo">
         <img class="brand-logo" src="./logo.jpg" alt="Logo VV kovo">
-        <span>VV kovo</span>
       </a>
       <ul class="nav-links">
         <li><a href="#sortiment">Sortiment</a></li>
@@ -106,11 +105,51 @@
 
     <section class="section container" id="kontakt">
       <h2>Kontakt</h2>
-      <div class="contact-box">
-        <p><strong>Adresa:</strong> Hlavní 123, 100 00 Praha</p>
-        <p><strong>Telefon:</strong> +420 777 123 456</p>
-        <p><strong>E-mail:</strong> info@zelezarstvinovak.cz</p>
-        <p><strong>Otevírací doba:</strong> Po-Pá 8:00-18:00, So 8:00-12:00</p>
+      <div class="contact-columns">
+        <div class="contact-box">
+          <table>
+            <tbody>
+              <tr>
+                <th>Adresa</th>
+                <td>Tepelská 551/5, 353 01 Mariánské Lázně, Úšovice <a href="https://mapy.com/cs/zakladni?planovani-trasy&amp;x=12.7115330&amp;y=49.9485120&amp;z=17" target="_blank" rel="noopener noreferrer">Navigovat</a></td>
+              </tr>
+              <tr>
+                <th>Upřesnění</th>
+                <td>areálu dopravního podniku</td>
+              </tr>
+              <tr>
+                <th>IČO</th>
+                <td>08387133 (více informací)</td>
+              </tr>
+              <tr>
+                <th>Popis firmy</th>
+                <td>Prodej železářského zboží.</td>
+              </tr>
+              <tr>
+                <th>Výdejní místo pro</th>
+                <td>Zásilkovna</td>
+              </tr>
+              <tr>
+                <th>Možnosti</th>
+                <td>Platba kartou, Parkoviště</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="contact-box opening-hours-column">
+          <h3>Otevírací hodiny</h3>
+          <table>
+            <tbody>
+              <tr><th>Pondělí</th><td>7:00-16:30</td></tr>
+              <tr><th>Úterý</th><td>7:00-16:30</td></tr>
+              <tr><th>Středa</th><td>7:00-16:30</td></tr>
+              <tr><th>Čtvrtek</th><td>7:00-16:30</td></tr>
+              <tr><th>Pátek</th><td>7:00-16:30</td></tr>
+              <tr><th>Sobota</th><td>8:00-12:00</td></tr>
+              <tr><th>Neděle</th><td>Zavřeno</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
   </main>

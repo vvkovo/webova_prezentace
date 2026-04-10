@@ -57,8 +57,8 @@ body {
 }
 
 .brand-logo {
-  width: 56px;
-  height: 56px;
+  width: 168px;
+  height: 168px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -194,6 +194,39 @@ h1 {
   background: #fff;
 }
 
+.contact-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.contact-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.contact-box th,
+.contact-box td {
+  text-align: left;
+  padding: 0.45rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.contact-box th {
+  width: 220px;
+}
+
+.opening-hours-column h3 {
+  margin-top: 0;
+}
+
+.opening-hours-column th {
+  width: 140px;
+}
+
 .contact-form {
   display: grid;
   gap: 0.6rem;
@@ -246,8 +279,8 @@ h1 {
   }
 
   .brand-logo {
-    width: 48px;
-    height: 48px;
+    width: 144px;
+    height: 144px;
   }
 
   .nav {
@@ -263,5 +296,9 @@ h1 {
 
   .section {
     padding: 3rem 0;
+  }
+
+  .contact-columns {
+    grid-template-columns: 1fr;
   }
 }
