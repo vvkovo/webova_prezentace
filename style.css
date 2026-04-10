@@ -194,21 +194,6 @@ h1 {
   background: #fff;
 }
 
-.contact-layout {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
-  align-items: start;
-}
-
-.opening-hours-box h3 {
-  margin-bottom: 0.6rem;
-}
-
-.opening-hours-box p {
-  margin: 0.35rem 0;
-}
-
 .contact-form {
   display: grid;
   gap: 0.6rem;
@@ -278,9 +263,5 @@ h1 {
 
   .section {
     padding: 3rem 0;
-  }
-
-  .contact-layout {
-    grid-template-columns: 1fr;
   }
 }
