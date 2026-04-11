@@ -216,10 +216,27 @@ h1 {
 }
 
 .services {
-  --service-logo-box-h: 88px;
-  --service-after-logo-gap: 0.85rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  align-items: start;
+  --service-logo-box-h: 92px;
+  --service-after-logo-gap: 0.75rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+@media (min-width: 640px) {
+  .services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.35rem;
+    row-gap: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+  }
 }
 
 .service-card {
@@ -234,19 +251,18 @@ h1 {
   padding: 0;
   line-height: 1.25;
   align-self: start;
-  min-height: 2.6em;
 }
 
 .service-logo-slot {
   margin: 0;
-  padding: 0 4px;
+  padding: 0 6px 2px;
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
   min-height: 0;
   height: var(--service-logo-box-h);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   overflow: hidden;
 }
@@ -260,7 +276,7 @@ h1 {
   max-width: 100%;
   max-height: var(--service-logo-box-h);
   object-fit: contain;
-  object-position: center;
+  object-position: center bottom;
   flex-shrink: 0;
 }
 
