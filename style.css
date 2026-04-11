@@ -195,8 +195,9 @@ h1 {
   width: 100%;
   aspect-ratio: 8 / 3;
   max-height: min(52vh, 540px);
-  min-height: 180px;
+  min-height: clamp(200px, 30vw, 360px);
   overflow: hidden;
+  background: #0f172a;
 }
 
 .photo-slide {
@@ -266,15 +267,6 @@ h1 {
   .photo-slide {
     transition: none;
   }
-
-  .photo-slide.is-active {
-    position: relative;
-    opacity: 1;
-  }
-
-  .photo-slide:not(.is-active) {
-    display: none;
-  }
 }
 
 .section {
@@ -329,8 +321,16 @@ h1 {
 
 @media (min-width: 1024px) {
   .services {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    column-gap: 1.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 1.35rem;
+    row-gap: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    column-gap: 1.25rem;
     row-gap: 1rem;
   }
 }
@@ -373,6 +373,17 @@ h1 {
   max-height: var(--service-logo-box-h);
   object-fit: contain;
   object-position: center bottom;
+  flex-shrink: 0;
+}
+
+.service-brand-logo-svg {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  max-width: 100%;
+  max-height: var(--service-logo-box-h);
+  height: auto;
   flex-shrink: 0;
 }
 

@@ -65,10 +65,5 @@ if (yearEl) {
     }
   });
 
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    show(0);
-    return;
-  }
-
   start();
 })();
