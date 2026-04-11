@@ -78,6 +78,10 @@ body {
   justify-content: flex-end;
 }
 
+.nav-social .social-links {
+  flex-wrap: nowrap;
+}
+
 .nav-follow {
   margin: 0;
   font-size: 0.8rem;
@@ -314,8 +318,17 @@ h1 {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 0.75rem;
+}
+
+.social-links li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
 
 .social-link {
@@ -336,9 +349,14 @@ h1 {
   outline-offset: 3px;
 }
 
-.social-icon {
+.social-icon,
+.social-link svg {
   width: 28px;
   height: 28px;
+  max-width: 28px;
+  max-height: 28px;
+  flex-shrink: 0;
+  display: block;
 }
 
 @media (max-width: 760px) {
