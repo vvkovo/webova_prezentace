@@ -181,6 +181,102 @@ h1 {
   color: #fff;
 }
 
+.photo-showcase {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0f172a;
+  position: relative;
+}
+
+.photo-showcase-viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 8 / 3;
+  max-height: min(52vh, 540px);
+  min-height: 180px;
+  overflow: hidden;
+}
+
+.photo-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.85s ease;
+  pointer-events: none;
+}
+
+.photo-slide.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.photo-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.photo-showcase-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.65rem 1rem 0.85rem;
+  background: linear-gradient(transparent, rgba(15, 23, 42, 0.75));
+}
+
+.photo-showcase-dot {
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.65;
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.photo-showcase-dot:hover {
+  opacity: 1;
+}
+
+.photo-showcase-dot:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.photo-showcase-dot.is-active {
+  background: #fff;
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-slide {
+    transition: none;
+  }
+
+  .photo-slide.is-active {
+    position: relative;
+    opacity: 1;
+  }
+
+  .photo-slide:not(.is-active) {
+    display: none;
+  }
+}
+
 .section {
   padding: 4rem 0;
 }
