@@ -344,6 +344,11 @@ h1 {
   transform: translateY(-1px);
 }
 
+.social-link:hover .social-icon--facebook,
+.social-link:hover .social-icon--instagram {
+  filter: brightness(1.12);
+}
+
 .social-link:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 3px;
