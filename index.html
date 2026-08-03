@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Železářství Novák - nářadí, spojovací materiál, barvy a odborné poradenství.">
+  <meta name="description" content="VV kovo - železářství v Mariánských Lázních: nářadí, spojovací materiál, barvy a odborné poradenství.">
   <title>VV kovo</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -81,37 +81,42 @@
   </header>
 
   <section class="photo-showcase" id="galerie" aria-roledescription="carousel" aria-label="Fotografie z prodejny">
-    <div class="photo-showcase-viewport">
-      <div class="photo-slide is-active">
+    <div class="photo-showcase-viewport" aria-live="off">
+      <div class="photo-slide is-active" id="photo-slide-1" role="tabpanel" aria-labelledby="photo-dot-1" aria-roledescription="snímek">
         <img src="./gallery/slide-1.jpeg" alt="Prodejna VV kovo — fotografie 1" width="1920" height="1080" fetchpriority="high" decoding="async">
       </div>
-      <div class="photo-slide">
+      <div class="photo-slide" id="photo-slide-2" role="tabpanel" aria-labelledby="photo-dot-2" aria-roledescription="snímek" aria-hidden="true">
         <img src="./gallery/slide-2.jpeg" alt="Prodejna VV kovo — fotografie 2" width="1920" height="1080" fetchpriority="low" decoding="async">
       </div>
-      <div class="photo-slide">
+      <div class="photo-slide" id="photo-slide-3" role="tabpanel" aria-labelledby="photo-dot-3" aria-roledescription="snímek" aria-hidden="true">
         <img src="./gallery/slide-3.jpeg" alt="Prodejna VV kovo — fotografie 3" width="1920" height="1080" fetchpriority="low" decoding="async">
       </div>
-      <div class="photo-slide">
+      <div class="photo-slide" id="photo-slide-4" role="tabpanel" aria-labelledby="photo-dot-4" aria-roledescription="snímek" aria-hidden="true">
         <img src="./gallery/slide-4.jpeg" alt="Prodejna VV kovo — fotografie 4" width="1920" height="1080" fetchpriority="low" decoding="async">
       </div>
-      <div class="photo-slide">
+      <div class="photo-slide" id="photo-slide-5" role="tabpanel" aria-labelledby="photo-dot-5" aria-roledescription="snímek" aria-hidden="true">
         <img src="./gallery/slide-5.jpeg" alt="Prodejna VV kovo — fotografie 5" width="1920" height="1080" fetchpriority="low" decoding="async">
       </div>
-      <div class="photo-slide">
+      <div class="photo-slide" id="photo-slide-6" role="tabpanel" aria-labelledby="photo-dot-6" aria-roledescription="snímek" aria-hidden="true">
         <img src="./gallery/slide-6.jpeg" alt="Prodejna VV kovo — fotografie 6" width="1920" height="1080" fetchpriority="low" decoding="async">
       </div>
-      <div class="photo-slide">
+      <div class="photo-slide" id="photo-slide-7" role="tabpanel" aria-labelledby="photo-dot-7" aria-roledescription="snímek" aria-hidden="true">
         <img src="./gallery/slide-7.jpeg" alt="Prodejna VV kovo — fotografie 7" width="1920" height="1080" fetchpriority="low" decoding="async">
       </div>
     </div>
-    <div class="photo-showcase-dots" role="tablist" aria-label="Výběr snímku">
-      <button type="button" class="photo-showcase-dot is-active" role="tab" aria-selected="true" aria-label="Snímek 1"></button>
-      <button type="button" class="photo-showcase-dot" role="tab" aria-selected="false" aria-label="Snímek 2"></button>
-      <button type="button" class="photo-showcase-dot" role="tab" aria-selected="false" aria-label="Snímek 3"></button>
-      <button type="button" class="photo-showcase-dot" role="tab" aria-selected="false" aria-label="Snímek 4"></button>
-      <button type="button" class="photo-showcase-dot" role="tab" aria-selected="false" aria-label="Snímek 5"></button>
-      <button type="button" class="photo-showcase-dot" role="tab" aria-selected="false" aria-label="Snímek 6"></button>
-      <button type="button" class="photo-showcase-dot" role="tab" aria-selected="false" aria-label="Snímek 7"></button>
+    <div class="photo-showcase-controls">
+      <button type="button" class="photo-showcase-toggle" aria-label="Pozastavit automatické přehrávání">
+        <span class="photo-showcase-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <div class="photo-showcase-dots" role="tablist" aria-label="Výběr snímku">
+        <button type="button" class="photo-showcase-dot is-active" id="photo-dot-1" role="tab" aria-controls="photo-slide-1" aria-selected="true" aria-label="Snímek 1"></button>
+        <button type="button" class="photo-showcase-dot" id="photo-dot-2" role="tab" aria-controls="photo-slide-2" aria-selected="false" tabindex="-1" aria-label="Snímek 2"></button>
+        <button type="button" class="photo-showcase-dot" id="photo-dot-3" role="tab" aria-controls="photo-slide-3" aria-selected="false" tabindex="-1" aria-label="Snímek 3"></button>
+        <button type="button" class="photo-showcase-dot" id="photo-dot-4" role="tab" aria-controls="photo-slide-4" aria-selected="false" tabindex="-1" aria-label="Snímek 4"></button>
+        <button type="button" class="photo-showcase-dot" id="photo-dot-5" role="tab" aria-controls="photo-slide-5" aria-selected="false" tabindex="-1" aria-label="Snímek 5"></button>
+        <button type="button" class="photo-showcase-dot" id="photo-dot-6" role="tab" aria-controls="photo-slide-6" aria-selected="false" tabindex="-1" aria-label="Snímek 6"></button>
+        <button type="button" class="photo-showcase-dot" id="photo-dot-7" role="tab" aria-controls="photo-slide-7" aria-selected="false" tabindex="-1" aria-label="Snímek 7"></button>
+      </div>
     </div>
   </section>
 
@@ -122,7 +127,7 @@
       <div class="grid cards">
         <article class="card">
           <h3>Nářadí</h3>
-          <p>Ručni i elektrické nářadí, vrtáky, brusné kotouče, metry a ochranné pomůcky.</p>
+          <p>Ruční i elektrické nářadí, vrtáky, brusné kotouče, metry a ochranné pomůcky.</p>
         </article>
         <article class="card">
           <h3>Spojovací materiál</h3>
@@ -229,6 +234,7 @@
       <form class="contact-form" action="https://formsubmit.co/vabisv8@email.cz" method="POST">
         <input type="hidden" name="_subject" value="Nová zpráva z webu VV kovo">
         <input type="hidden" name="_captcha" value="false">
+        <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <label for="name">Jméno</label>
         <input id="name" name="name" type="text" required>
