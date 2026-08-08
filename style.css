@@ -193,9 +193,9 @@ h1 {
 .photo-showcase-viewport {
   position: relative;
   width: 100%;
-  aspect-ratio: 8 / 3;
-  max-height: min(52vh, 540px);
-  min-height: clamp(200px, 30vw, 360px);
+  aspect-ratio: 3 / 2;
+  max-height: min(68vh, 720px);
+  min-height: clamp(300px, 30vw, 420px);
   overflow: hidden;
   background: #0f172a;
 }
